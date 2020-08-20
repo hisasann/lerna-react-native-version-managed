@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "versionup:push-git-tag": "lerna version patch",
-    "versionup:patch": "lerna version patch --no-git-tag-version"
+    "versionup:patch": "lerna version patch --no-git-tag-version && yarn rn-versionup",
+    "rn-versionup": "cd ./packages/PackageReactNative && yarn versionup"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
