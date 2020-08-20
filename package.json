@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "versionup:push-git-tag": "lerna version patch",
     "versionup:patch": "lerna version patch --no-git-tag-version"
   },
   "devDependencies": {
